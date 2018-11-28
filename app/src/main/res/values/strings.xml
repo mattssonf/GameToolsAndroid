@@ -3,4 +3,6 @@
     <string name="button_play">Start</string>
     <string name="button_join">Join</string>
     <string name="button_host">Host</string>
+
+    <string name="enter_name">Please enter your name</string>
 </resources>
