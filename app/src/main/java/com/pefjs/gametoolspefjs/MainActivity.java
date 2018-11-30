@@ -20,7 +20,8 @@ public class MainActivity extends AppCompatActivity {
 
                 break;
             case R.id.button_host:
-                hostActivity();
+                Intent intentHost = new Intent(this, NameActivity.class);
+                startActivity(intentHost);
                 break;
             case R.id.button_join:
                 Intent intentJoin = new Intent(this, JoinActivity.class);
@@ -29,8 +30,4 @@ public class MainActivity extends AppCompatActivity {
         }
     }
 
-    public void hostActivity(){
-        Intent intent = new Intent(this, NameActivity.class);
-        startActivity(intent);
-    }
 }
