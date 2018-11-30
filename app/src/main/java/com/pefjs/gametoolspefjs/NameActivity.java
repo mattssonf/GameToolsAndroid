@@ -5,12 +5,12 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.EditText;
 
-public class NameScreenActivity extends AppCompatActivity {
+public class NameActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_name_screen);
+        setContentView(R.layout.activity_name);
     }
 
     public void saveName(View view){
