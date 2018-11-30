@@ -9,14 +9,14 @@ import android.widget.EditText;
 
 public class NameActivity extends AppCompatActivity {
 
-    public static final String NAME_TEXT = "com.pefjs.gametoolspefjs.NAME";
+    public static final String NAME = "com.pefjs.gametoolspefjs.NAME";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_name);
 
-        Button button = (Button) findViewById(R.id.submitButtonName);
+        Button button = (Button) findViewById(R.id.button_submitName);
         button.setOnClickListener(new View.OnClickListener(){
             public void onClick(View v){
                 passName();
@@ -26,11 +26,11 @@ public class NameActivity extends AppCompatActivity {
 
     //Sends the name to the next screen
     public void passName(){
-        EditText nameText = (EditText) findViewById(R.id.chooseNameText);
+        EditText nameText = (EditText) findViewById(R.id.editText_name);
         String stringName = nameText.getText().toString();
 
         Intent roomActivity = new Intent(this, RoomActivity.class);
-        roomActivity.putExtra(NAME_TEXT, stringName);
+        roomActivity.putExtra(NAME, stringName);
 
         startActivity(roomActivity);
     }

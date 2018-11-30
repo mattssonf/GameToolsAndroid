@@ -5,12 +5,11 @@
     <string name="button_join">Join</string>
     <string name="button_host">Host</string>
 
-    <!--NAME_ACTIVITY -->
-    <string name="enter_name">Name:</string>
+    <!-- NAME_ACTIVITY -->
+    <string name="text_name">Name:</string>
     <string name="submit_name">Submit</string>
 
-    <!--JOIN_ACTIVITY -->
-    <string name="text_name">Name</string>
+    <!-- JOIN_ACTIVITY -->
     <string name="text_join">Room Code</string>
     <string name="text_room"># - - - -</string>
     <string name="button_start">Start</string>
