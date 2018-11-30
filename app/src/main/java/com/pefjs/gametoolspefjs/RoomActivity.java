@@ -1,7 +1,11 @@
 package com.pefjs.gametoolspefjs;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.widget.TextView;
+
+import org.w3c.dom.Text;
 
 public class RoomActivity extends AppCompatActivity {
 
@@ -10,5 +14,10 @@ public class RoomActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_room);
 
+        Intent getName = getIntent();
+        String name = getName.getStringExtra(NameActivity.NAME_TEXT);
+
+        TextView textView = (TextView) findViewById(R.id.player1Text);
+        textView.setText(name);
     }
 }
