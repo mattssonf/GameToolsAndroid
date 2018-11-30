@@ -17,9 +17,11 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".JoinActivity">
-
+        <activity
+            android:name=".NameActivity"
+            android:parentActivityName=".MainActivity">
         </activity>
+        <activity android:name=".JoinActivity"></activity>
         <activity android:name=".RoomActivity"></activity>
     </application>
 
