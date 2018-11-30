@@ -17,7 +17,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".NameScreenActivity"
+            android:name=".NameActivity"
             android:parentActivityName=".MainActivity">
         </activity>
     </application>
