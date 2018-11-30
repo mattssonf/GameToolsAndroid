@@ -13,11 +13,5 @@ public class RoomActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_room);
-
-        Intent getName = getIntent();
-        String name = getName.getStringExtra(NameActivity.NAME_TEXT);
-
-        TextView textView = (TextView) findViewById(R.id.player1Text);
-        textView.setText(name);
     }
 }

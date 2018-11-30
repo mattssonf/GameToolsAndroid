@@ -9,7 +9,7 @@ import android.widget.EditText;
 
 public class NameActivity extends AppCompatActivity {
 
-    public static final String NAME_TEXT = "com.pefjs.gametoolspefjs";
+    public static final String NAME_TEXT = "com.pefjs.gametoolspefjs.NAME";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
