@@ -45,11 +45,12 @@
             android:paddingEnd="8dp">
 
             <TextView
+                android:id="@+id/text_username"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="8dp"
-                android:text="Player 1"
                 android:textAlignment="center"
+                android:text="Username"
                 android:textColor="@color/colorLight"
                 android:textSize="24sp" />
 
@@ -57,7 +58,16 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:textAlignment="center"
-                android:text="Player 2"
+                android:text="Logan"
+                android:textColor="@color/colorLight"
+                android:layout_marginBottom="8dp"
+                android:textSize="24sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:text="Bernard"
                 android:textColor="@color/colorLight"
                 android:layout_marginBottom="8dp"
                 android:textSize="24sp" />
