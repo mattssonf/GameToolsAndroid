@@ -12,6 +12,7 @@ import android.view.inputmethod.InputMethodManager;
 import android.widget.EditText;
 
 public class JoinActivity extends AppCompatActivity {
+    public static final String ROOM = "com.pefjs.gametoolspefjs.ROOM";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -31,7 +32,9 @@ public class JoinActivity extends AppCompatActivity {
                 if(keyEvent.getAction() == KeyEvent.ACTION_DOWN
                         && keyCode == KeyEvent.KEYCODE_ENTER
                         && numberfield.length() == 4) {
-                    // TODO: CREATE INTENT TO SWITCH TO THE NAME ACTIVITY
+                    Intent intent = new Intent(JoinActivity.this, NameActivity.class);
+                    intent.putExtra(ROOM, ((EditText) findViewById(R.id.numberfield_join)).getText().toString());
+                    startActivity(intent);
                     return true;
                 }
                 return false;
