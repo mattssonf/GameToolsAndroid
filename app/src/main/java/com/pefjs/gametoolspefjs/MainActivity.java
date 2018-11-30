@@ -23,7 +23,8 @@ public class MainActivity extends AppCompatActivity {
                 hostActivity();
                 break;
             case R.id.button_join:
-
+                Intent intentJoin = new Intent(this, JoinActivity.class);
+                startActivity(intentJoin);
                 break;
         }
     }

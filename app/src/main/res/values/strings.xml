@@ -3,6 +3,8 @@
     <string name="button_play">Start</string>
     <string name="button_join">Join</string>
     <string name="button_host">Host</string>
-
-    <string name="enter_name">Please enter your name</string>
+    <string name="text_name">Name</string>
+    <string name="text_join">Room Code</string>
+    <string name="text_room"># - - - -</string>
+    <string name="button_start">Start</string>
 </resources>
