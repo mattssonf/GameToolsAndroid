@@ -17,7 +17,8 @@ public class MainActivity extends AppCompatActivity {
     public void buttonClick(View view) {
         switch(view.getId()) {
             case R.id.button_play:
-
+                Intent intentGame = new Intent(this, GameActivity.class);
+                startActivity(intentGame);
                 break;
             case R.id.button_host:
                 Intent intentHost = new Intent(this, NameActivity.class);
